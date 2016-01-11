@@ -3,6 +3,12 @@
 This container uses a volume mount to `/var/run/docker.sock` to query for running containers and their
 images and does a little cleanup dance.
 
+## Run me!
+
+    docker run -v /var/run/docker.sock:/var/run/docker.sock bypass/docker-cleanup:latest
+
+## Optional Configuration
+
 Some helpful ENV vars you might consider setting, but are not required:
 
 * `DEBUG` - set to 1 for debugging mode, which will NOT commit any actions (default: `0`)
