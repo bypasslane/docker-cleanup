@@ -3,7 +3,7 @@
 SOCKET=${DOCKER_SOCKET:-/var/run/docker.sock}
 DOCKER=${DOCKER_BIN:-/usr/local/bin/docker}
 DEBUG=${DEBUG:-0}
-EXEMPT="${EXEMPT_CONTAINERS} bypass/docker-cleanup:latest"
+EXEMPT="${EXEMPT_IMAGES} bypass/docker-cleanup:latest"
 DELAY=${DELAY:-3600}
 
 die() {
